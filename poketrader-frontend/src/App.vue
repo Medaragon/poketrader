@@ -1,7 +1,9 @@
 <script setup>
+import TheNavigationBar from './components/TheNavigationBar.vue';
 </script>
 
 <template>
+  <TheNavigationBar />
   <img alt="Vue logo" src="./assets/logo.png" />
   <router-view />
 </template>
