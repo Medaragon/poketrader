@@ -1,5 +1,5 @@
 <script setup>
-import TheNavigationBar from './components/TheNavigationBar.vue';
+import TheNavigationBar from './components/TheNavigationBar.vue'
 </script>
 
 <template>
