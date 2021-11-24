@@ -2,7 +2,7 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-  pokemon: Object
+  pokemon: { type: Object, default: undefined }
 })
 </script>
 
