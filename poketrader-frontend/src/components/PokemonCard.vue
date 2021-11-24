@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div class="card">
-    <img class="sprite" :src="props.pokemon.sprite" />
+    <img class="sprite" :src="props.pokemon.sprite" draggable="false" />
     <div>
       <span>{{ props.pokemon.id }} - </span>
       <span class="capitalize">{{ props.pokemon.name }}</span>

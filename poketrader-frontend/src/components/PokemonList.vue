@@ -1,10 +1,13 @@
 <script setup>
-import { ref } from 'vue'
-import PokeApi from '@/services/pokeapi.js'
+import { ref, onBeforeMount } from 'vue'
+import PokeAPIService from '@/services/pokeapi.js'
 import PokemonCard from './PokemonCard.vue'
 
 const pokemons = ref([])
-PokeApi.fetchPokemons().then((result) => (pokemons.value = result))
+
+onBeforeMount(async () => {
+  pokemons.value = await PokeAPIService.fetchPokemons()
+})
 </script>
 
 <template>

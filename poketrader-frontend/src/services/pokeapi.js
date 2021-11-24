@@ -4,7 +4,7 @@ const pokeapiGraphQLUrl = 'https://beta.pokeapi.co/graphql/v1beta'
 const sprite = (id) =>
   `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png`
 
-export default {
+const PokeAPIService = {
   async fetchPokemons() {
     const query = `query samplePokeAPIquery {
       species: pokemon_v2_pokemonspecies(order_by: {id: asc}) {
@@ -39,3 +39,5 @@ export default {
     return pokes
   }
 }
+
+export default PokeAPIService
