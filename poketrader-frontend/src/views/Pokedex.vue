@@ -3,6 +3,6 @@ import PokemonList from '@/components/PokemonList.vue'
 </script>
 
 <template>
-  <h3>Pokédex</h3>
+  <h1>Pokédex</h1>
   <PokemonList />
 </template>
